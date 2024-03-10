@@ -1,0 +1,12 @@
+:root{
+  --color-principal: #00171F;
+  --color-fuente-principal: #FFFFFF;
+  --color-fuente-secundario: #00A8E8;
+  --color-borde: #003459;
+}
+
+body{
+  background: var(--color-principal);
+  color: var(--color-fuente-principal);
+
+}
