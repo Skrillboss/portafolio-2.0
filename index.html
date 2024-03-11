@@ -9,37 +9,81 @@
 </head>
 
 <body>
+    <div class="contendor-pagina">
 
-    <!-- Encabezado con imagen de mi logo personal y un menu indice para acceder a las secciones de mi Portafolio -->
-    <header class="encabezado">
-        <a href="#">
-            <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp"
-                alt="logo personal">
-        </a>
-        <ul class="menu">
-            <li>Inicio</li>
-            <li>Proyectos</li>
-            <li>Habilidades</li>
-            <li>Sobre mí</li>
-            <li>Contacto</li>
-        </ul>
+        <!-- Encabezado con imagen de mi logo personal y un menu indice para acceder a las secciones de mi Portafolio -->
+        <header class="encabezado">
+            <div class="contenedor-encabezado">
+            <a href="#" class="logo">
+                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="logo personal">
+            </a>
+            <nav class="menu">
+                <a href="#" class="nav-link">Inicio</a>
+                <a href="#" class="nav-link">Proyectos</a>
+                <a href="#" class="nav-link">Habilidades</a>
+                <a href="#" class="nav-link">Sobre mí</a>
+                <a href="#" class="nav-link">Contacto</a>
+            </nav>
+        </div>
         </header>
 
 
-    <section class="inicio">
-        <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="Imagen de mi persona">
-        <h1>Luis Heredia</h1>
-        <h2>Desarrolador Web</h2>
-    </section>
+        <section class="inicio">
+            <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="Imagen de mi persona">
+            <h1>Luis Heredia</h1>
+            <h2>Desarrolador Web</h2>
+        </section>
 
 
-    <section class="proyecto"></section>
-    <section class="desarrollo">
-        <section class="habilidades"></section>
-        <section class="sobre-mi"></section>
-    </section>
-    <section class="contacto"></section>
-    <footer class="pie"></footer>
+        <section class="proyecto">
+            <h2>Proyectos</h2>
+            <p>¡Mis creaciones superan los límites de la RAM con estilo!</p>
+            <button>
+                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+            </button>
+            <button>
+                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+            </button>
+
+        </section>
+
+
+        <section class="desarrollo">
+            <section class="habilidades">
+                <h2>Habilidades</h2>
+                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+            </section>
+            <section class="contacto">
+
+            </section>
+        </section>
+        <section class="formulario">
+            
+            <form action="post">
+                <fieldset>
+                    <legend>
+                        <h2>¡Lánzame un commit!</h2>
+                    </legend>
+                    <label for="email"></label>
+                    <input type="email" name="email" placeholder="Email:" class="email">
+                    <label for="mensaje"></label>
+                    <input type="text" name="mesaje" placeholder="¡Quiero que formes parte de mi equipo!..." class="mesaje">
+                </fieldset>
+                <button type="submit">¡Git push!</button>
+            </form>
+
+
+        </section>
+        <footer class="pie"></footer>
+
+    </div>
 </body>
 
 </html>

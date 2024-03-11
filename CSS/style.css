@@ -1,12 +1,66 @@
+  /* MI PALETA DE COLORES  */
+
 :root{
-  --color-principal: #00171F;
-  --color-fuente-principal: #FFFFFF;
+  --color-principal: rgb(0, 23, 31);
+  --color-fuente-principal: rgb(255, 255, 255);
   --color-fuente-secundario: #00A8E8;
   --color-borde: #003459;
 }
 
+
 body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
   background: var(--color-principal);
   color: var(--color-fuente-principal);
+}
+
+.contendor-pagina{
+  max-width: 1050px;
+  width: 100%;
+
+}
+
+
+/* ENCABEZADO */
+
+header{
+  display: flex;
+  position: fixed;
+  left: -7px;
+  width: 100vw;
+  height: 150px;
+  justify-content: space-around;
+  background: linear-gradient(90deg, rgba(255,255,255, 0.2), rgba(0, 23, 31, 0.6));
+}
+
+.contenedor-encabezado{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1050px;
+  width: 100%;
+}
+
+.logo{
+  display: flex;
+}
+
+.logo img{
+  height: 120px;
+}
+
+
+/* INICIO */
+
+.inicio{
+  margin-top: 208px;
+}
+
+.inicio img{
+
+  height: 663px;
+  width: 506px;
 
 }
