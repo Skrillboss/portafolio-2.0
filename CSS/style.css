@@ -5,6 +5,7 @@
   --color-fuente-principal: rgb(255, 255, 255);
   --color-fuente-secundario: #00A8E8;
   --color-borde: #003459;
+  font-family: monospace;
 }
 
 
@@ -20,7 +21,6 @@ body{
 .contendor-pagina{
   max-width: 1050px;
   width: 100%;
-
 }
 
 
@@ -39,6 +39,7 @@ header{
 .contenedor-encabezado{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1050px;
   width: 100%;
 }
@@ -49,6 +50,18 @@ header{
 
 .logo img{
   height: 120px;
+  width: 120px;
+}
+
+.menu{
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.menu a{
+  text-decoration: none;
+  color: var(--color-fuente-principal);
 }
 
 
