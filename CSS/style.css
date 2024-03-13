@@ -1,110 +1,165 @@
   /* MI PALETA DE COLORES  */
 
-:root{
-  --color-principal: rgb(0, 23, 31);
-  --color-fuente-principal: rgb(255, 255, 255);
-  --color-fuente-secundario: #00A8E8;
-  --color-borde: #003459;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 18px;
-}
+  :root {
+    --color-principal: rgb(0, 23, 31);
+    --color-fuente-principal: rgb(255, 255, 255);
+    --color-fuente-secundario: #00A8E8;
+    --color-borde: #003459;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+  }
+
+  /* REGLAS GENERALES DE MI PAGINA */
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: var(--color-principal);
+    color: var(--color-fuente-principal);
+  }
+
+  .contendor-pagina {
+    max-width: 1050px;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0 auto 42px;
+  }
 
 
-body{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  background: var(--color-principal);
-  color: var(--color-fuente-principal);
-}
+  /* ENCABEZADO */
 
-.contendor-pagina{
-  max-width: 1050px;
-  width: 100%;
-}
+  header {
+    display: flex;
+    position: fixed;
+    left: -7px;
+    width: 100vw;
+    height: 150px;
+    justify-content: space-around;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(0, 23, 31, 0.6));
+  }
 
+  .contenedor-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1050px;
+    width: 100%;
+  }
 
-/* ENCABEZADO */
+  .logo {
+    display: flex;
+  }
 
-header{
-  display: flex;
-  position: fixed;
-  left: -7px;
-  width: 100vw;
-  height: 150px;
-  justify-content: space-around;
-  background: linear-gradient(90deg, rgba(255,255,255, 0.2), rgba(0, 23, 31, 0.6));
-}
+  .logo img {
+    height: 120px;
+    width: 120px;
+  }
 
-.contenedor-encabezado{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1050px;
-  width: 100%;
-}
+  .menu {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+  }
 
-.logo{
-  display: flex;
-}
-
-.logo img{
-  height: 120px;
-  width: 120px;
-}
-
-.menu{
-  display: flex;
-  width: 60%;
-  justify-content: space-between;
-}
-
-.menu a{
-  text-decoration: none;
-  color: var(--color-fuente-principal);
-}
+  .menu a {
+    text-decoration: none;
+    color: var(--color-fuente-principal);
+  }
 
 
-/* INICIO */
 
-.inicio{
-  margin-top: 208px;
-  display: flex;
-}
+  /* INICIO */
 
-.imagen-perfil{
-  height: 663px;
-  width: 506px;
-  margin-right: 24px;
-}
+  .inicio {
+    margin-top: 208px;
+    display: flex;
+  }
 
-.inicio article{
-  height: 663px;
-}
+  .imagen-perfil {
+    height: 663px;
+    width: 506px;
+    margin-right: 24px;
+  }
 
-.inicio article h1{
-  font-size: 64px;
-  font-weight: bold;
-  margin: 0 auto 10%;
-}
+  .inicio article {
+    height: 663px;
+  }
 
-.inicio article h2{
-  font-size: 40px;
-  font-weight: 700;
-  margin: 0 auto 14%;
-}
+  .inicio article h1 {
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0 auto 10%;
+  }
 
-.inicio article p{
-  margin: 0 auto 14%;
-}
+  .inicio article h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 auto 14%;
+  }
 
-.boton-descargar-cv{
-  height: 68px;
-  width: 197px;
-}
+  .inicio article p {
+    margin: 0 auto 14%;
+  }
 
-.boton-contacto{
-  height: 68px;
-  width: 68px;
-}
+  .contenedor-botones-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .boton-descargar-cv {
+    height: 68px;
+    width: 197px;
+  }
+
+  .contenedor-botones-contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor-botones-contacto a {
+    display: flex;
+    margin: 0 22px;
+    align-items: center;
+  }
+
+  .boton-contacto {
+    height: 68px;
+    width: 68px;
+  }
+
+
+  /* PROYECTOS */
+
+  .proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 267px;
+  }
+
+  .proyectos p {
+    margin: 0 auto 144px;
+  }
+
+  .boton-front-y-back {
+
+  }
+
+  .boton-front-y-back img {
+    height: 228px;
+    width: 230px;
+  }
+
+  .scroll-horizontal {
+    height: 488px;
+    width: 451px;
+  }
