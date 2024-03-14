@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- CSS-SWIPER -->
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
@@ -32,10 +36,10 @@
             <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="Imagen de mi persona"
                 class="imagen-perfil">
             <article>
-                <h1>Luis Heredia</h1>
-                <h2>Desarrolador Web <br>
-                    y software
-                </h2>
+                <h1>Luis</h1><h1>Heredia</h1>
+                <h2>Desarrolador WEB</h2>
+                <h2>y software</h2>
+
                 <p>Autodidacta con experiencia y capacidad de
                     resolución de problemas con ideas creativas
                     buscando la simplicidad del codigo, siempre
@@ -60,18 +64,101 @@
         <section class="proyectos">
             <h2>Proyectos</h2>
             <p>¡Mis creaciones superan los límites de la RAM con estilo!</p>
-            <div class="scoll-horizontal">
-                <button class="boton-front-y-back">
-                    <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp"
-                        alt="boton para ver los proyectos front-end">
-                </button>
-                <button class="boton-front-y-back">
-                    <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp"
-                        alt="boton para ver los proyectos back-end">
-                </button>
 
-                <!-- TODO: REEMPLAZAR ESTA IMAGEN POR UN SCROLL HORIZONTAL DE 3 IMAGENES -->
-                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="TODO:QUITAR" class="scroll-horizontal">
+
+
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="imagenes/imagen-ejemplo/imagen1.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="name">Luis Heredia</h3>
+                                <p class="description">problemas con ideas creativas buscando la simplicidad del codigo,
+                                    siempre buscando los mejores resultados en el menor</p>
+                                <button class="ver-mas">Ver más</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="imagenes/imagen-ejemplo/imagen1.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="name">Luis Heredia</h3>
+                                <p class="description">problemas con ideas creativas buscando la simplicidad del codigo,
+                                    siempre buscando los mejores resultados en el menor</p>
+                                <button class="ver-mas">Ver más</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="imagenes/imagen-ejemplo/imagen1.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="name">Luis Heredia</h3>
+                                <p class="description">problemas con ideas creativas buscando la simplicidad del codigo,
+                                    siempre buscando los mejores resultados en el menor</p>
+                                <button class="ver-mas">Ver más</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="imagenes/imagen-ejemplo/imagen1.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="name">Luis Heredia</h3>
+                                <p class="description">problemas con ideas creativas buscando la simplicidad del codigo,
+                                    siempre buscando los mejores resultados en el menor</p>
+                                <button class="ver-mas">Ver más</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="imagenes/imagen-ejemplo/imagen1.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="name">Luis Heredia</h3>
+                                <p class="description">problemas con ideas creativas buscando la simplicidad del codigo,
+                                    siempre buscando los mejores resultados en el menor</p>
+                                <button class="ver-mas">Ver más</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="imagenes/imagen-ejemplo/imagen1.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="name">Luis Heredia</h3>
+                                <p class="description">problemas con ideas creativas buscando la simplicidad del codigo,
+                                    siempre buscando los mejores resultados en el menor</p>
+                                <button class="ver-mas">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
 
         </section>
@@ -80,14 +167,16 @@
         <section class="desarrollo">
             <section class="habilidades">
                 <h2>Habilidades</h2>
-                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
-                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
-                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
-                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
-                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
-                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
-                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
-                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+                <div class="grid">
+                    <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+                    <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+                    <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+                    <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+                    <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+                    <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+                    <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+                    <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="">
+                </div>
             </section>
             <section class="contacto">
 
@@ -96,16 +185,14 @@
         <section class="formulario">
 
             <form action="post">
-                <fieldset>
-                    <legend>
-                        <h2>¡Lánzame un commit!</h2>
-                    </legend>
-                    <label for="email"></label>
-                    <input type="email" name="email" placeholder="Email:" class="email">
-                    <label for="mensaje"></label>
-                    <input ty pe="text" name="mesaje" placeholder="¡Quiero que formes parte de mi equipo!..."
-                        class="mesaje">
-                </fieldset>
+                <legend>
+                    <h2>¡Lánzame un commit!</h2>
+                </legend>
+                <label for="email"></label>
+                <input type="email" name="email" placeholder="Email:" class="email">
+                <label for="mensaje"></label>
+                <input ty pe="text" name="mesaje" placeholder="¡Quiero que formes parte de mi equipo!..."
+                    class="mesaje">
                 <button type="submit">¡Git push!</button>
             </form>
 
@@ -119,5 +206,9 @@
 
     </div>
 </body>
+
+<!-- SWIPER JS -->
+<script src="JS/swiper-bundle.min.js"></script>
+<script src="JS/main.js"></script>
 
 </html>
