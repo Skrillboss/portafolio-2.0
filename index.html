@@ -16,34 +16,34 @@
     <div class="contendor-pagina">
 
         <!-- Encabezado con imagen de mi logo personal y un menu indice para acceder a las secciones de mi Portafolio -->
-        <header class="encabezado">
+        <header class="encabezado" id="site-header">
             <div class="contenedor-encabezado">
                 <a href="#" class="logo">
                     <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="logo personal">
                 </a>
-                <nav class="menu">
-                    <a href="#" class="nav-link">Inicio</a>
-                    <a href="#" class="nav-link">Proyectos</a>
-                    <a href="#" class="nav-link">Habilidades</a>
-                    <a href="#" class="nav-link">Sobre mí</a>
-                    <a href="#" class="nav-link">Contacto</a>
+                <nav class="menu" onclick="scrollToElement(event)">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#proyectos" class="nav-link" >Proyectos</a>
+                    <a href="#desarrollo" class="nav-link">Habilidades</a>
+                    <a href="#desarrollo" class="nav-link">Sobre mí</a>
+                    <a href="#formulario" class="nav-link">Contacto</a>
                 </nav>
             </div>
         </header>
 
-
-        <section class="inicio">
+        <section class="inicio" id="inicio">
             <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="Imagen de mi persona"
                 class="imagen-perfil">
             <article>
-                <h1>Luis</h1><h1>Heredia</h1>
-                <h2>Desarrolador WEB</h2>
+                <h1>Luis</h1>
+                <h1>Heredia</h1>
+                <h2>Desarrollador WEB</h2>
                 <h2>y software</h2>
 
-                <p>Autodidacta con experiencia y capacidad de
+                <p>Autodidacta con <span>experiencia</span> y capacidad de
                     resolución de problemas con ideas creativas
                     buscando la simplicidad del codigo, siempre
-                    buscando los mejores resultados en el menor
+                    buscando los <span>mejores resultados</span> en el menor
                     tiempo posible.</p>
                 <div class="contenedor-botones-inicio">
                     <button class="boton-descargar-cv">Descargar CV</button>
@@ -61,9 +61,9 @@
         </section>
 
 
-        <section class="proyectos">
+        <section class="proyectos" id="proyectos">
             <h2>Proyectos</h2>
-            <p>¡Mis creaciones superan los límites de la RAM con estilo!</p>
+            <p class="exclamacion">Mis creaciones <span>superan los límites</span> de la RAM con estilo</p>
 
 
 
@@ -164,7 +164,7 @@
         </section>
 
 
-        <section class="desarrollo">
+        <section class="desarrollo" id="desarrollo">
             <section class="habilidades">
                 <h2>Habilidades</h2>
                 <div class="grid">
@@ -182,26 +182,33 @@
 
             </section>
         </section>
-        <section class="formulario">
+        <section class="formulario" id="formulario">
 
             <form action="post">
                 <legend>
-                    <h2>¡Lánzame un commit!</h2>
+                    <h2 class="commit">¡Lánzame un commit</h2>
                 </legend>
                 <label for="email"></label>
                 <input type="email" name="email" placeholder="Email:" class="email">
                 <label for="mensaje"></label>
-                <input ty pe="text" name="mesaje" placeholder="¡Quiero que formes parte de mi equipo!..."
-                    class="mesaje">
-                <button type="submit">¡Git push!</button>
+                <textarea name="mensaje" placeholder="¡Quiero que formes parte de mi equipo!..."
+                    class="mensaje"></textarea>
+                <button type="button">¡Git push!</button>
             </form>
 
 
         </section>
         <footer class="pie">
-            <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="logo personal">
-            <p>¡No temas, mis respuestas están más probadas que el software en producción!</p>
-
+            <a href="#" class="logo">
+                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="logo personal">
+            </a>
+            <p class="exclamacion">No temas, mis respuestas están más probadas que el software en producción</p>
+            <a href="#">
+                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="logo de Linkedin"
+                    class="boton-contacto"></a>
+            <a href="#">
+                <img src="/imagenes/imagen-ejemplo/elementor-placeholder-image.webp" alt="logo de GitHub"
+                    class="boton-contacto"></a>
         </footer>
 
     </div>
