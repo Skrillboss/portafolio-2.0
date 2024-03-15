@@ -34,14 +34,14 @@ window.addEventListener('scroll', function() {
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
 
-// SUBIR 100 PIXELES EL SCROLL AL REALIZAR EL COMPORTAMIENTO DE UN HREF, CON UN DESPLAZAMIENTO SUAVE
+// SUBIR 80 PIXELES EL SCROLL AL REALIZAR EL COMPORTAMIENTO DE UN HREF, CON UN DESPLAZAMIENTO SUAVE
 
 function scrollToElement(event) {
   event.preventDefault();
 
   const targetId = event.target.getAttribute('href').substring(1);
   const targetElement = document.getElementById(targetId);
-  const offset = 100;
+  const offset = 80;
 
   if (targetElement) {
       const targetPosition = targetElement.offsetTop - offset;
