@@ -46,6 +46,19 @@
     border: 1px solid var(--color-fuente-principal);
     font-weight: 1000;
     cursor: pointer;
+    box-shadow: 2px 2px 4px var(--color-fuente-principal);
+    transition: transform 0.3s ease;
+    transition: box-shadow 0.3s ease;
+  }
+
+  button:hover {
+    border-radius: 10px;
+    background: var(--color-fuente-secundario);
+    border: 1px solid var(--color-fuente-principal);
+    font-weight: 1000;
+    cursor: pointer;
+    box-shadow: none;
+    transform: translate(2px, 2px);
   }
 
   strong {
@@ -107,6 +120,11 @@
   .menu a {
     text-decoration: none;
     color: var(--color-fuente-principal);
+    transition: all 0.3s ease;
+  }
+
+  .menu .nav-link:hover{
+    color: var(--color-fuente-secundario);
   }
 
 
@@ -223,25 +241,11 @@
     margin-bottom: 50px;
   }
 
-  .overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    background-color: var(--color-borde);
-    border-radius: 25px 25px 25px 25px;
-  }
-
-  .overlay::after {
-    border-radius: 0 25px 0 0;
-    background-color: var(--color-principal);
-  }
-
   .card-image {
     position: relative;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    max-width: 200px;
+    width: 100%;
     padding: 3px;
   }
 
@@ -249,8 +253,8 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 5px;
-    border: 4px solid var(--color-borde);
+    border-radius: 10px;
+    border: 3px solid var(--color-borde);
   }
 
   .name {
@@ -266,19 +270,21 @@
   }
 
   .ver-mas {
-    border: none;
     font-size: 16px;
-    color: var(--color-borde);
+    color: var(--color-fuente-principal);
     padding: 8px 16px;
     background-color: var(--color-principal);
     border-radius: 6px;
     margin: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: 2px 2px 4px var(--color-fuente-secundario);
   }
-
+  
   .ver-mas:hover {
-    background: var(--color-fuente-principal);
+    background: var(--color-fuente-secundario);
+    color: black;
+    box-shadow: 2px 2px 4px var(--color-fuente-principal);
   }
 
 
@@ -489,4 +495,11 @@
       display: none;
     }
     
+    .description {
+      display: none;
+    }
+
+    .card-image .card-img{
+      border: none;
+    }
   }
