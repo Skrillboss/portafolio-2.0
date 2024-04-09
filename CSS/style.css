@@ -152,7 +152,15 @@
     height: 67vh;
     max-width: 506px;
     margin-right: 50px;
-    object-fit: fill;
+    object-fit: cover;
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      var(--color-principal) 0%,
+      var(--color-principal) 95%,
+      transparent 100%
+    );
+    
   }
 
   .inicio article {
