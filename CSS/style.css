@@ -154,13 +154,9 @@
     margin-right: 50px;
     object-fit: cover;
     mask-image: linear-gradient(
-      to bottom,
-      transparent 0%,
-      var(--color-principal) 0%,
       var(--color-principal) 95%,
-      transparent 100%
+      transparent
     );
-    
   }
 
   .inicio article {
@@ -220,6 +216,13 @@
   .boton-contacto {
     height: 68px;
     width: 68px;
+    filter: drop-shadow(2px 2px 2px var(--color-fuente-secundario));
+    transition: transform 0.3s ease, filter 0.4s ease;
+  }
+
+  .boton-contacto:hover{
+    filter: drop-shadow(0 0 0 var(--color-fuente-secundario));
+    transform: translate(2px, 2px);
   }
 
 
