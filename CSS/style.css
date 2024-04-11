@@ -18,6 +18,7 @@
     justify-content: center;
     background: var(--color-principal);
     color: var(--color-fuente-principal);
+    overflow-x: hidden;
   }
 
   .contendor-pagina {
@@ -80,6 +81,25 @@
   }
 
   /* ENCABEZADO */
+
+  .hero-image,
+  .hero-image-complemento{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 110vh;
+    width: 100vw;
+    object-fit: cover;
+    mask-image: linear-gradient(
+      var(--color-principal) 90%,
+      transparent
+    );
+  }
+
+  .hero-image-complemento{
+    z-index: 1;
+  }
 
   header {
     display: flex;
@@ -146,6 +166,7 @@
     position: relative;
     margin-top: 250px;
     display: flex;
+    z-index: 2;
   }
 
   .imagen-perfil {
@@ -441,6 +462,10 @@
     body {
       padding: 0 50px;
       align-items: center;
+    }
+
+    .hero-image-complemento{
+      display: none;
     }
 
     .contenedor-encabezado {
