@@ -237,11 +237,16 @@
     margin-top: 267px;
   }
 
+  .contenedor-grid-proyectos{
+    display: flex;
+    gap: 20px;
+  }
+
   .grid-proyectos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 10px;
-    max-width: 1020px;
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+    gap: 20px;
+    max-width: 500px;
     min-width: 300px;
 }
 
