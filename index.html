@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
 
-    <!-- CSS-SWIPER -->
-    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+    <!-- AOS-LIBRARY -->
+    <link href="node_modules/aos/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/style.css">
+
 </head>
 
 <body>
@@ -73,21 +74,20 @@
         <!-- *****************************************************PROYECTOS**************************************************-->
         <!--*****************************************************************************************************************-->
         <section class="proyectos" id="proyectos">
-
             <h2>Proyectos</h2>
             <p class="exclamacion">Mis creaciones <strong>superan los límites</strong> de la RAM con estilo</p>
             <div class="contenedor-grid-proyectos">
                 <div class="grid-proyectos">
-                    <div class="item-1"><img src="imagenes/galeria/formularioFuncional.png" alt=""></div>
-                    <div class="item-2"><img src="imagenes/galeria/proyectoPopuPeli.jpeg" alt=""></div>
-                    <div class="item-3"><img src="imagenes/galeria/chatSimulator.jpeg" alt=""></div>
-                    <div class="item-4"><img src="imagenes/galeria/primerPortafolio.png" alt=""></div>
+                    <div data-aos="flip-left" class="item-1"><img src="imagenes/galeria/formularioFuncional.png" alt=""></div>
+                    <div data-aos="flip-up" class="item-2"><img src="imagenes/galeria/proyectoPopuPeli.jpeg" alt=""></div>
+                    <div data-aos="flip-down" class="item-3"><img src="imagenes/galeria/chatSimulator.jpeg" alt=""></div>
+                    <div data-aos="flip-right" class="item-4"><img src="imagenes/galeria/primerPortafolio.png" alt=""></div>
                 </div>
                 <div class="grid-proyectos">
-                    <div class="item-1"><img src="imagenes/galeria/formularioFuncional.png" alt=""></div>
-                    <div class="item-2"><img src="imagenes/galeria/proyectoPopuPeli.jpeg" alt=""></div>
-                    <div class="item-3"><img src="imagenes/galeria/chatSimulator.jpeg" alt=""></div>
-                    <div class="item-4"><img src="imagenes/galeria/primerPortafolio.png" alt=""></div>
+                    <div data-aos="flip-left" class="item-1"><img src="imagenes/galeria/formularioFuncional.png" alt=""></div>
+                    <div data-aos="flip-up" class="item-2"><img src="imagenes/galeria/proyectoPopuPeli.jpeg" alt=""></div>
+                    <div data-aos="flip-down" class="item-3"><img src="imagenes/galeria/chatSimulator.jpeg" alt=""></div>
+                    <div data-aos="flip-right" class="item-4"><img src="imagenes/galeria/primerPortafolio.png" alt=""></div>
                 </div>
             </div>
 
@@ -100,7 +100,7 @@
             <section class="habilidades">
                 <h2>Habilidades</h2>
                 <div class="contenedor-habilidad-especialidad">
-                    <h3 class="habilidad-especialidad">Front End</h3>
+                    <h3 data-aos="fade-up" data-aos-duration="2000" class="habilidad-especialidad">Front End</h3>
                     <div class="grid">
                         <img src="imagenes/logos/html.svg" alt="">
                         <img src="imagenes/logos/css.svg" alt="">
@@ -109,7 +109,9 @@
                     </div>
                 </div>
                 <div class="contenedor-habilidad-especialidad">
-                    <h3 class="habilidad-especialidad">Back End</h3>
+                    <h3 data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"  class="habilidad-especialidad">Back End</h3>
                     <div class="grid">
                         <img src="imagenes/logos/java.svg" alt="">
                         <img src="imagenes/logos/node.svg" alt="">
@@ -162,8 +164,8 @@
     </div>
 </body>
 
-<!-- SWIPER JS -->
-<script src="JS/swiper-bundle.min.js"></script>
+<!-- AOS JS -->
+<script src="node_modules/aos/dist/aos.js"></script>
 <script src="JS/main.js"></script>
 <script src="JS/descargarCV.js"></script>
 <script src="JS/ocultarHeader.js"></script>
