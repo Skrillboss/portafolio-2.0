@@ -36,7 +36,7 @@
                         <li><a href="#formulario" class="nav-link">Contacto</a></li>
                     </ul>
                 </nav>
-                
+
             </div>
         </header>
 
@@ -44,8 +44,7 @@
         <!-- *****************************************************INICIO*****************************************************-->
         <!--*****************************************************************************************************************-->
         <section class="inicio" id="inicio">
-            <img src="imagenes/logos/foto-perfil-sin-fondo.png" alt="Imagen de mi persona"
-                class="imagen-perfil">
+            <img src="imagenes/logos/foto-perfil-sin-fondo.png" alt="Imagen de mi persona" class="imagen-perfil">
             <article>
                 <h1>Luis</h1>
                 <h1>Heredia</h1>
@@ -61,11 +60,9 @@
                     <button class="boton-descargar-cv">Descargar CV</button>
                     <div class="contenedor-botones-contacto">
                         <a href="https://www.linkedin.com/in/developer-luisheredia/" target="_blank">
-                            <img src="imagenes/logos/linkedin.svg" alt="logo de Linkedin"
-                                class="boton-contacto"></a>
+                            <img src="imagenes/logos/linkedin.svg" alt="logo de Linkedin" class="boton-contacto"></a>
                         <a href="https://github.com/Skrillboss" target="_blank">
-                            <img src="imagenes/logos/github.svg" alt="logo de GitHub"
-                                class="boton-contacto"></a>
+                            <img src="imagenes/logos/github.svg" alt="logo de GitHub" class="boton-contacto"></a>
                     </div>
                 </div>
             </article>
@@ -80,16 +77,24 @@
             <p class="exclamacion">Mis creaciones <strong>superan los límites</strong> de la RAM con estilo</p>
             <div class="contenedor-grid-proyectos">
                 <div class="grid-proyectos">
-                    <div data-aos="flip-left" class="item-1"><img src="imagenes/galeria/formularioFuncional.png" alt=""></div>
-                    <div data-aos="flip-up" class="item-2"><img src="imagenes/galeria/proyectoPopuPeli.jpeg" alt=""></div>
-                    <div data-aos="flip-down" class="item-3"><img src="imagenes/galeria/chatSimulator.jpeg" alt=""></div>
-                    <div data-aos="flip-right" class="item-4"><img src="imagenes/galeria/primerPortafolio.png" alt=""></div>
+                    <div data-aos="flip-left" class="item-1"><img src="imagenes/galeria/formularioFuncional.png" alt="">
+                    </div>
+                    <div data-aos="flip-up" class="item-2"><img src="imagenes/galeria/proyectoPopuPeli.jpeg" alt="">
+                    </div>
+                    <div data-aos="flip-down" class="item-3"><img src="imagenes/galeria/chatSimulator.jpeg" alt="">
+                    </div>
+                    <div data-aos="flip-right" class="item-4"><img src="imagenes/galeria/primerPortafolio.png" alt="">
+                    </div>
                 </div>
                 <div class="grid-proyectos">
-                    <div data-aos="flip-left" class="item-1"><img src="imagenes/galeria/formularioFuncional.png" alt=""></div>
-                    <div data-aos="flip-up" class="item-2"><img src="imagenes/galeria/proyectoPopuPeli.jpeg" alt=""></div>
-                    <div data-aos="flip-down" class="item-3"><img src="imagenes/galeria/chatSimulator.jpeg" alt=""></div>
-                    <div data-aos="flip-right" class="item-4"><img src="imagenes/galeria/primerPortafolio.png" alt=""></div>
+                    <div data-aos="flip-left" class="item-1"><img src="imagenes/galeria/formularioFuncional.png" alt="">
+                    </div>
+                    <div data-aos="flip-up" class="item-2"><img src="imagenes/galeria/proyectoPopuPeli.jpeg" alt="">
+                    </div>
+                    <div data-aos="flip-down" class="item-3"><img src="imagenes/galeria/chatSimulator.jpeg" alt="">
+                    </div>
+                    <div data-aos="flip-right" class="item-4"><img src="imagenes/galeria/primerPortafolio.png" alt="">
+                    </div>
                 </div>
             </div>
 
@@ -111,9 +116,8 @@
                     </div>
                 </div>
                 <div class="contenedor-habilidad-especialidad">
-                    <h3 data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="1500"  class="habilidad-especialidad">Back End</h3>
+                    <h3 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+                        class="habilidad-especialidad">Back End</h3>
                     <div class="grid">
                         <img src="imagenes/logos/java.svg" alt="">
                         <img src="imagenes/logos/node.svg" alt="">
@@ -130,22 +134,35 @@
         <!--*****************************************************************************************************************-->
         <section class="formulario" id="formulario">
 
-            <form action="post">
+            <form id="formulario-contacto">
                 <legend>
                     <h2 class="commit">¡Lánzame un commit</h2>
                 </legend>
                 <label for="email"></label>
-                <input type="email" name="email" placeholder="Email:" class="email">
+                <input type="email" name="email" placeholder="Email:" class="email" required>
                 <label for="mensaje"></label>
-                <textarea name="mensaje" placeholder="¡Quiero que formes parte de mi equipo!..."
-                    class="mensaje"></textarea>
-                <button type="button">¡Git push!</button>
+                <textarea name="mensaje" placeholder="¡Quiero que formes parte de mi equipo!..." class="mensaje"
+                    required></textarea>
+                <button type="submit">¡Git push!</button>
             </form>
 
-        <!--*****************************************************************************************************************-->
-        <!-- ******************************************************FOOTER****************************************************-->
-        <!--*****************************************************************************************************************-->
+            <!-- Modal de Confirmación -->
+            <div id="confirmModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <p>Tu mensaje:</p>
+                    <p id="messageText"></p>
+                    <p>será respondido al correo: </p>
+                    <p id="emailText"></p>
+                    <p>en un plazo de 24 horas.</p>
+                </div>
+            </div>
+            
         </section>
+
+            <!--*****************************************************************************************************************-->
+            <!-- ******************************************************FOOTER****************************************************-->
+            <!--*****************************************************************************************************************-->
         <footer class="pie">
             <a href="#" class="logo">
                 <img src="imagenes/mi-logo/Logo Luis Heredia-01.svg" alt="logo personal">
@@ -156,11 +173,9 @@
             </span>
             <div class="contenedor-botones-contacto">
                 <a href="https://www.linkedin.com/in/developer-luisheredia/" target="_blank">
-                    <img src="imagenes/logos/linkedin.svg" alt="logo de Linkedin"
-                        class="boton-contacto"></a>
+                    <img src="imagenes/logos/linkedin.svg" alt="logo de Linkedin" class="boton-contacto"></a>
                 <a href="https://github.com/Skrillboss" target="_blank">
-                    <img src="imagenes/logos/github.svg" alt="logo de GitHub"
-                        class="boton-contacto"></a>
+                    <img src="imagenes/logos/github.svg" alt="logo de GitHub" class="boton-contacto"></a>
             </div>
         </footer>
     </div>
@@ -168,6 +183,7 @@
 
 <!-- AOS JS -->
 <script src="node_modules/aos/dist/aos.js"></script>
+<script src="JS/control-modal.js"></script>
 <script src="JS/main.js"></script>
 <script src="JS/descargarCV.js"></script>
 <script src="JS/ocultarHeader.js"></script>
