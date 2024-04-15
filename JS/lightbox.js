@@ -22,3 +22,4 @@ contenedorImagen.addEventListener('click', ()=>{
     contenedorImagen.classList.toggle('move');
     mostrarImg.classList.toggle('mostrar');
 })
+
