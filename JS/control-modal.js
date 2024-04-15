@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('formulario-contacto');
     const modal = document.getElementById('confirmModal');
-    const closeButton = document.querySelector('.close-button');
+    const closeButton = document.querySelector('.cerrar-pantalla');
     const messageText = document.getElementById('messageText');
     const emailText = document.getElementById('emailText');
     const mensajeInput = form.querySelector('.mensaje');
