@@ -179,18 +179,27 @@
   }
 
   #fondoHero1{
-    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../imagenes/hero-image/hero-image1.jpg);
-    z-index: 3;
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 23, 31, 0.2) 80%, var(--color-principal)), 
+    linear-gradient(to right, rgba(0, 23, 31, 0.2) 85%, var(--color-principal)), 
+    linear-gradient(to left, rgba(0, 23, 31, 0.2) 85%, var(--color-principal)), 
+    url('../imagenes/hero-image/hero-image1.jpg');
   }
   
   #fondoHero2{
-    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../imagenes/hero-image/hero-image2.jpg);
-    z-index: 2;
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 23, 31, 0.2) 80%, var(--color-principal)), 
+    linear-gradient(to right, rgba(0, 23, 31, 0.2) 85%, var(--color-principal)), 
+    linear-gradient(to left, rgba(0, 23, 31, 0.2) 85%, var(--color-principal)), 
+    url('../imagenes/hero-image/hero-image2.jpg');
   }
   
   #fondoHero3{
-    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../imagenes/hero-image/hero-image3.jpg);
-    z-index: 1;
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 23, 31, 0.2) 80%, var(--color-principal)), 
+    linear-gradient(to right, rgba(0, 23, 31, 0.2) 85%, var(--color-principal)), 
+    linear-gradient(to left, rgba(0, 23, 31, 0.2) 85%, var(--color-principal)), 
+    url('../imagenes/hero-image/hero-image3.jpg');
   }
 
   .mainSlide{
