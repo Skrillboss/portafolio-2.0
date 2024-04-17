@@ -501,28 +501,6 @@
     align-items: center;
   }
 
-  .desarrollo::before{
-    content: "";
-    position: absolute;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    height: 50%;
-    background-image: linear-gradient(to top, rgba(0, 23, 31, 0.2) 50%, var(--color-principal));
-    z-index: 2;
-  }
-
-  .desarrollo::after{
-    content: "";
-    position: absolute;
-    width: 100vw;
-    bottom: 0;
-    left: 0;
-    height: 50%;
-    background-image: linear-gradient(to bottom, rgba(0, 23, 31, 0.2) 50%, var(--color-principal));
-    z-index: 2;
-  }
-
   /* HABLIDADES */
 
   .habilidades {
@@ -582,15 +560,42 @@
   /* FORMULARIO */
 
   .formulario {
+    height: 100vh;
+    position: relative;
     margin-top: 185px;
+    overflow-y: hidden;
   }
 
-  .formulario form {
+  .formulario::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: 50%;
+    background-image: linear-gradient(to top, rgba(0, 23, 31, 0.2) 50%, var(--color-principal));
+    z-index: 1;
+  }
+
+  .formulario::after{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    background-image: linear-gradient(to bottom, rgba(0, 23, 31, 0.2) 50%, var(--color-principal));
+    z-index: 1;
+  }
+
+  .formulario #formulario-contacto{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: 2;
   }
 
   .commit::after {
@@ -610,6 +615,7 @@
     text-align: center;
     color: var(--color-fuente-principal);
     font-size: 24px;
+    
   }
 
   .formulario form textarea::placeholder {
@@ -671,13 +677,20 @@
   /* FOOTER */
 
   .pie {
-    display: flex;
-    height: 150px;
     margin-top: 58px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     color: var(--color-fuente-trasfondo);
+    width: 100vw;
+  }
+
+  .contendor-footer{
+    display: flex;
+    width: 1050px;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
   }
 
   .pie span {
