@@ -455,6 +455,26 @@
     text-align: center;
   }
 
+  .back-video{
+    position:absolute;
+    z-index: -1;
+    left: 0;
+    width: 100vw;
+    object-fit: cover;
+    opacity: .5;
+  }
+
+  .back-video.mask-top {
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+}
+
+/* Máscara para la parte inferior del video */
+.back-video.mask-bottom {
+    -webkit-mask-image: linear-gradient(to top, black 0%, transparent 100%);
+    mask-image: linear-gradient(to top, black 0%, transparent 100%);
+}
+
   .habilidades h2 {
     margin-bottom: 2px;
   }
