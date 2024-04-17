@@ -152,11 +152,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    /* background-image: url(/imagenes/hero-image/hero-image1.jpg); */
-    /* background-size: cover; */
-    /* background-position: center; */
     transition: background-image 2s ease-out;
-    /* animation: banner 28s infinite linear; */
   }
   .banner-content{
     margin: 0;
@@ -495,13 +491,37 @@
   /* DESARROLLO */
 
   .desarrollo {
+    position: relative;
     margin-top: 300px;
+    height: 100vh;
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
+  .desarrollo::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: 50%;
+    background-image: linear-gradient(to top, rgba(0, 23, 31, 0.2) 50%, var(--color-principal));
+    z-index: 2;
+  }
+
+  .desarrollo::after{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    background-image: linear-gradient(to bottom, rgba(0, 23, 31, 0.2) 50%, var(--color-principal));
+    z-index: 2;
+  }
 
   /* HABLIDADES */
 
@@ -512,27 +532,18 @@
     max-width: 750px;
     width: 100%;
     text-align: center;
+    z-index: 3;
   }
 
+
   .back-video{
-    position:absolute;
+    position: absolute;
     z-index: -1;
     left: 0;
     width: 100vw;
     object-fit: cover;
     opacity: .5;
   }
-
-  .back-video.mask-top {
-    -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
-}
-
-/* Máscara para la parte inferior del video */
-.back-video.mask-bottom {
-    -webkit-mask-image: linear-gradient(to top, black 0%, transparent 100%);
-    mask-image: linear-gradient(to top, black 0%, transparent 100%);
-}
 
   .habilidades h2 {
     margin-bottom: 2px;
