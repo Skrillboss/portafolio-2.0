@@ -427,9 +427,21 @@
   /* EXPERIENCIA */
 
   .experiencia{
+    position: static;
     display: flex;
     margin-top: 267px;
     flex-direction: column;
+  }
+
+  .parallax-window {
+    height: 100vh;
+    min-height: 400px;
+    background: transparent;
+  }
+
+
+  .experiencia h2{
+    text-align: center;
   }
 
   .wrap{
@@ -542,16 +554,6 @@
     z-index: 3;
   }
 
-
-  .back-video{
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    width: 100vw;
-    object-fit: cover;
-    opacity: .5;
-  }
-
   .habilidades h2 {
     margin-bottom: 2px;
   }
@@ -584,9 +586,37 @@
     border: 3px solid var(--color-borde);
   }
 
+  .contenedor-iconos{
+    position: relative;
+  }
+
+  .contenedor-iconos .tooltips{
+    width: 150px;
+    text-align: center;
+    position: absolute;
+    transition: 0.3s ease-out;
+    transform: translateY(-100px);
+    opacity: 0;
+    font-size: 30px;
+  }
+
+  .grid>.contenedor-iconos:hover .tooltips{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
 
 
   /* FORMULARIO */
+
+  .back-video{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 100vw;
+    object-fit: cover;
+    opacity: .5;
+  }
 
   .formulario {
     height: 100vh;
