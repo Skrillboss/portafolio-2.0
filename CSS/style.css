@@ -2,9 +2,10 @@
 
   :root {
     --color-principal: rgb(0, 23, 31);
+    --color-hover-principal: #00183c8f;
+    --color-borde: #003459;
     --color-fuente-principal: rgb(255, 255, 255);
     --color-fuente-secundario: #00A8E8;
-    --color-borde: #003459;
     --color-fuente-trasfondo: rgba(87, 87, 87, 0.2);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 18px;
@@ -20,11 +21,6 @@
     color: var(--color-fuente-principal);
     overflow-x: hidden;
   }
-
-  /* .contendor-pagina {
-    max-width: 1050px;
-    width: 100%;
-  } */
 
   h1 {
     margin-right: 35px;
@@ -446,6 +442,7 @@
     background-color: var(--color-fuente-secundario);
     list-style: none;
     display: flex;
+    border-radius: 10px 10px 0 0;
   }
 
   ul.tabs li{
@@ -473,11 +470,43 @@
 
   ul.tabs li a .tab-text{
     margin-left: 8px;
+    font-size: 20px;
+  }
+
+  article details:first-of-type{
+    border-radius: 10px 10px 0 0;
+  }
+
+  article details:last-of-type{
+    border-radius: 0 0 10px 10px;
+  }
+
+  details{
+    padding: 20px;
+    transition: 0.3s ease-out;
+  }
+
+  details summary{
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  details[open]{
+    background-color: var(--color-principal);
+  }
+
+  details:not([open]):hover{
+    background-color: var(--color-hover-principal);
+  }
+
+  details p{
+    font-size: 16px;
   }
 
   .secciones{
     width: 100%;
     background-color: var(--color-borde);
+    border-radius: 0 0 10px 10px;
   }
 
   .secciones article{
