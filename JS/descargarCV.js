@@ -6,8 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     for (var i = 0; i < botonesDescargarCV.length; i++) {
 
       botonesDescargarCV[i].addEventListener("click", function() {
-
-        var url = "../interes/LuisHeredia.pdf";
+        var url = "interes/LuisHeredia.pdf";
         
         window.open(url, "_blank");
       });
